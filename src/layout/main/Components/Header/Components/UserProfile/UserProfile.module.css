@@ -1,0 +1,53 @@
+
+@import '../../../../../../index.css';
+
+.dropdown_icon_button{
+  border: 1px solid #eee !important;
+    width: 40px!important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background-color: #eee !important; 
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px !important;
+}
+
+.dropdown_icon_button::after {
+ content: none !important;
+}
+.dropdown_icon_button:active, .dropdown_icon_button:focus, .dropdown_icon_button:checked, .dropdown_icon_button:hover{
+  border: 1px solid #eee;
+}
+.dropdown_icon_button svg {
+  font-size: 2.5rem !important;
+  color: var(--gray-white-text-color) !important
+}
+.navLink_container{
+ 
+  width: 140px !important;
+  height: auto !important;
+  background: #fff !important;
+  border: 1px solid #eee !important;
+  padding: 10px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 4px 9px -8px grey !important;
+}
+.navItems:hover {
+
+  background-color: var(--gray-hover-bg-color);
+}
+
+.navLink {
+  text-decoration: none;
+    font-size: 14px!important;
+    padding: 5px 10px;
+    color: var(--gray-white-text-color);
+    display: block;
+    width: 100%;
+  }
+  .navLink:hover {
+  color: var(--gray-white-text-color);
+}
+
