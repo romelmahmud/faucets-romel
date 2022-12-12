@@ -1,11 +1,12 @@
-import React from "react";
-import Form from "../../shared/Form/Form";
-import FormButton from "../../shared/FormButton/FormButton";
-import FormContainer from "../../shared/FormContainer/FormContainer";
-import FormFooter from "../../shared/FormFooter/FormFooter";
-import FormTitle from "../../shared/FormTitle/FormTitle";
-import InputField from "../../shared/InputField/InputField";
-import Wrapper from "../../shared/Wrapper/Wrapper";
+import {
+  Form,
+  FormButton,
+  FormContainer,
+  FormFooter,
+  FormTitle,
+  InputField,
+  Wrapper,
+} from "../../shared";
 
 const SignUp = () => {
   return (
@@ -20,7 +21,7 @@ const SignUp = () => {
               <FormButton text="Sign Up" />
             </form>
             <FormFooter
-              text="Already Have an account?"
+              text="Already have an account?"
               linkText="Login"
               route="login"
             />
