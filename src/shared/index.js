@@ -5,6 +5,7 @@ import FormFooter from "./FormFooter/FormFooter";
 import FormTitle from "./FormTitle/FormTitle";
 import InputField from "./InputField/InputField";
 import Wrapper from "./Wrapper/Wrapper";
+import Container from "./Container/Container";
 
 export {
   Form,
@@ -14,4 +15,5 @@ export {
   FormTitle,
   InputField,
   Wrapper,
+  Container,
 };

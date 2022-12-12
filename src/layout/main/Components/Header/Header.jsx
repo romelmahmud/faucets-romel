@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Container, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import UserProfile from "./Components/UserProfile/UserProfile";
 import { FaWallet } from "react-icons/fa";
 import styles from "./Header.module.css";
 import WalletModal from "./Components/WalletModal/WalletModal";
+import { Container } from "../../../../shared";
 
 const Header = () => {
   const [modalShow, setModalShow] = useState(false);
