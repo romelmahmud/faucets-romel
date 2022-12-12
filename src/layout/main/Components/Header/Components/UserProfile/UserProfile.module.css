@@ -53,3 +53,15 @@
   color: var(--gray-white-text-color);
 }
 
+
+
+@media only screen and (max-width: 600px) 
+{
+  .dropdown_icon_button{
+      padding: 3px !important;
+      margin-left: 15px;
+  }
+  .dropdown_icon_button svg {
+    font-size: 2rem !important;
+  }
+}

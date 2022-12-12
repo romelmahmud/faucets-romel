@@ -63,6 +63,25 @@
   margin-right: 5px;
 }
 
+.wallet_icon{
+  display: none;
+  font-size: 1.5625rem;
+  color: var(--primary-text-color) !important;
+}
+
 .user_icon_container{
   
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 600px) 
+{
+  .wallet_button{
+    display: none !important;
+  }
+  .wallet_icon{
+    display: block;
+  }
+ 
 }

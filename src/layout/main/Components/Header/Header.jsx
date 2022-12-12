@@ -22,9 +22,7 @@ const Header = () => {
             <div className={styles.network_button_container}>
               <div className={styles.network_lists_select}></div>
               <div className={styles.connect_wallet_button}>
-                {/* <button className={styles.wallet_button}>
-                  <FaWallet /> <span>Connect Wallet</span>
-                </button> */}
+                <FaWallet className={styles.wallet_icon} onClick={() => setModalShow(true)} />
                 <Button
                   className={styles.wallet_button}
                   onClick={() => setModalShow(true)}
