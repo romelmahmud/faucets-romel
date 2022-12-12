@@ -1,0 +1,48 @@
+@import '../../../../../../index.css';
+
+
+.model_container{
+  border: 1px solid #eee !important;
+  padding: 25px !important;
+   
+}
+
+
+.modal_header {
+  border-bottom: none !important;
+}
+
+.modal_title {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+}
+
+ .wallet_image_box_container{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 20px;
+
+}
+
+.wallet_image_box {
+  background: var(--gray-hover-bg-color);
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    margin:0 10px 10px;
+    cursor: pointer;
+   
+    user-select: none;
+}
+
+.wallet_image_box img {
+  width: 100px;
+  height: 100px;
+}
+.wallet_image_box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text-color);
+}

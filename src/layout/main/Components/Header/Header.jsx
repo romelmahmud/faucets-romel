@@ -1,10 +1,14 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import UserProfile from "./Components/UserProfile/UserProfile";
+import { FaWallet } from "react-icons/fa";
 import styles from "./Header.module.css";
+import WalletModal from "./Components/WalletModal/WalletModal";
 
 const Header = () => {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <header className={styles.header_wrapper}>
       <Container>
@@ -17,7 +21,22 @@ const Header = () => {
           <div className={styles.header_right_content}>
             <div className={styles.network_button_container}>
               <div className={styles.network_lists_select}></div>
-              <div className={styles.connect_wallet_button}></div>
+              <div className={styles.connect_wallet_button}>
+                {/* <button className={styles.wallet_button}>
+                  <FaWallet /> <span>Connect Wallet</span>
+                </button> */}
+                <Button
+                  className={styles.wallet_button}
+                  onClick={() => setModalShow(true)}
+                >
+                  <FaWallet /> <span>Connect Wallet</span>
+                </Button>
+
+                <WalletModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
             </div>
             <div className={styles.user_icon_container}>
               <UserProfile />
