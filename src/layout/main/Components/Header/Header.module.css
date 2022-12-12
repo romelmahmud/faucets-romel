@@ -12,7 +12,9 @@
 }
 
 .header_logo_container{
-
+display: flex;
+    color: #fff;
+    align-items: center;
 }
 
 .header_content_container a {
@@ -25,6 +27,7 @@
  font-weight: 600;
  font-size: 1.5625rem;
  color: var(--primary-text-color);
+ margin-bottom: 0;
 }
 
 .header_right_content{
@@ -52,7 +55,7 @@
   background: transparent  !important;
   border: 2px solid var(--primary-text-color) !important;
   padding: 9px 20px;
-  border-radius: 3px;
+  border-radius: 3px !important;
   font-size: 14px;
   color: var(--primary-text-color) !important;
   font-weight: 600;
@@ -61,6 +64,12 @@
 
 .wallet_button svg {
   margin-right: 5px;
+}
+.wallet_button span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  
 }
 
 .wallet_icon{

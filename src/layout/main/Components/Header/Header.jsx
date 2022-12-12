@@ -15,14 +15,17 @@ const Header = () => {
         <div className={styles.header_content_container}>
           <div className={styles.header_logo_container}>
             <Link to="/">
-              <p className={styles.header_logo}>Faucets</p>
+              <h2 className={styles.header_logo}>Faucets</h2>
             </Link>
           </div>
           <div className={styles.header_right_content}>
             <div className={styles.network_button_container}>
               <div className={styles.network_lists_select}></div>
               <div className={styles.connect_wallet_button}>
-                <FaWallet className={styles.wallet_icon} onClick={() => setModalShow(true)} />
+                <FaWallet
+                  className={styles.wallet_icon}
+                  onClick={() => setModalShow(true)}
+                />
                 <Button
                   className={styles.wallet_button}
                   onClick={() => setModalShow(true)}
