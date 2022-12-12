@@ -18,7 +18,7 @@ const LogIn = () => {
             <form>
               <InputField type="email" />
               <InputField type="password" />
-              <FormButton text="Sign Up" />
+              <FormButton text="Login" />
             </form>
             <FormFooter
               text="Don't have an account?"
