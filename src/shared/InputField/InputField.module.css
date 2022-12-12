@@ -1,0 +1,28 @@
+
+.input_group {
+  margin-bottom: 8px;
+
+}
+
+.label {
+  font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #b8b4b4;
+  font-size: 14px ;
+  font-family: Arial, Helvetica, sans-serif;
+  background: transparent;
+}
+
+.eye_slash {
+  position: absolute;
+  right: 30px;
+  
+}

@@ -1,0 +1,18 @@
+@import '../../index.css';
+.input_group{
+  margin-bottom: 8px;
+}
+.input_group button{
+  text-transform: capitalize;
+    width: 100%;
+    padding: 8px 15px;
+    background: var(--primary-bg);
+    color: var(--white-text-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+}
