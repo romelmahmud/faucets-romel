@@ -1,0 +1,28 @@
+.faq_title {
+  margin: 30px 0;
+    text-align: center;
+}
+.faq_title h2 {
+  font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #9b1fe9;
+   
+}
+
+.faq_accordion_container{
+ 
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) 
+{
+  .faq_accordion_container{
+ 
+    width: 100%;
+    
+  }
+}

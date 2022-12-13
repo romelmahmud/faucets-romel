@@ -1,0 +1,33 @@
+
+@import '../../../index.css';
+
+.accordion {
+  border: 1px solid #eee;
+  margin: 10px 0;
+}
+.accordion_qes{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 15px 9px;
+}
+.accordion_qes h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--gray-black-text-color);
+}
+.accordion_ans  {
+  padding: 0 10px 10px;
+  margin-top: 10px;
+}
+.accordion_ans p {
+  font-size: 14px;
+  margin-bottom: 0;
+  width: 95%;
+  color: var(--gray-white-text-color);
+}
+
+
+
