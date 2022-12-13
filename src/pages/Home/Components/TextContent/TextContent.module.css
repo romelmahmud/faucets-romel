@@ -1,0 +1,19 @@
+@import '../../../../index.css';
+
+.text_content{
+  padding: 48px 0;
+}
+.text_content h2 {
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: var(--primary-bg);
+  margin-bottom: 20px;
+}
+
+.text_content p{
+  font-size: 1rem;  
+    color: var(--gray-white-text-color);
+    max-width: 680px;
+    line-height: 1.5625rem;
+    margin-bottom: 0;
+}

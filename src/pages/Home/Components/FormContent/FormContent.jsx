@@ -3,6 +3,7 @@ import { FaExclamationTriangle } from "react-icons/fa";
 import ReCAPTCHA from "react-google-recaptcha";
 
 import styles from "./FormContent.module.css";
+import RequestHistory from "../RequestHistory/RequestHistory";
 
 const FormContent = () => {
   return (
@@ -39,7 +40,7 @@ const FormContent = () => {
                   type="text"
                   placeholder="Test link"
                   name="test_link"
-                  disabled=""
+                  disabled
                   className={styles.input_field}
                   value="20 Test Link"
                 />
@@ -49,7 +50,7 @@ const FormContent = () => {
                   type="text"
                   placeholder="ETH"
                   name="eth"
-                  disabled=""
+                  disabled
                   className={styles.input_field}
                   value="0.5 ETH"
                 />
@@ -57,8 +58,17 @@ const FormContent = () => {
             </div>
           </div>
           <div className={styles.recaptcha_form}>
-            <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
+            <ReCAPTCHA
+              sitekey={process.env.REACT_APP_SITE_KEY}
+              clasName={styles.recaptcha}
+            />
           </div>
+          <div className={styles.button_container}>
+            <button type="submit" className={styles.submit_button}>
+              Send Request
+            </button>
+          </div>
+          <RequestHistory />
         </form>
       </div>
     </div>

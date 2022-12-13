@@ -1,0 +1,98 @@
+@import '../../../../index.css';
+.form_container{
+  padding: 25px 20px;
+  border: 1px solid #eee;
+  background: var(--white-bg-color);
+}
+
+.form_alert{
+  background: var(--gray-white-bg-color);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.form_alert svg {
+  font-size: 18px;
+  color: var(--primary-text-color);
+}
+
+
+.form_alert_text{
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-size: .875rem;
+}
+
+.form_alert_text span{
+  font-weight: 600;
+}
+
+.wallet_form{
+  width:50%;
+  margin-top: 15px;
+}
+.form_group {
+  width: 100%;
+}
+.wallet_address label, .rqs_type label{
+  font-weight: 600;
+    color: var(--primary-text-color);
+    font-size: 13px;
+    width: 100%;
+}
+.form_group input{
+  margin-top: 5px;
+  outline: none;
+  border: 1px solid #eee;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.double_input_fields{
+  display: flex;
+}
+
+.form_group .input_flex{
+  width: 100%;
+  display: inline-flex;
+}
+.recaptcha_form, .button_container {
+  margin-top: 15px;
+}
+
+.recaptcha_form {
+  max-width: 90%;
+}
+
+
+.rst_type_input {
+  margin-right: 15px;
+
+}
+
+.submit_button{
+  background: var(--primary-bg);
+    color: var(--white-text-color);
+    text-transform: capitalize;
+    font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 768px) 
+{
+  .wallet_form{
+    width:100%;
+    
+  }
+  
+ 
+}
