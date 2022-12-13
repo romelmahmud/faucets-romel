@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaExclamationTriangle } from "react-icons/fa";
 import ReCAPTCHA from "react-google-recaptcha";
 
 import styles from "./FormContent.module.css";
 import RequestHistory from "../RequestHistory/RequestHistory";
+import { CoinDataContext } from "../../../../context/CoinDataContext/CoinDataContext";
 
 const FormContent = () => {
+  const { coinData } = useContext(CoinDataContext);
+
   return (
     <div className={styles.form_container}>
       <div className={styles.form_alert}>
         <FaExclamationTriangle />
         <p className={styles.form_alert_text}>
-          Your wallet is connected to <span>Ethereum Kovan</span>, so you are
-          requesting <span>Ethereum Kovan</span> Link/ETH.
+          Your wallet is connected to <span>{coinData}</span>, so you are
+          requesting <span>{coinData}</span> Link/ETH.
         </p>
       </div>
       <div className={styles.wallet_form}>

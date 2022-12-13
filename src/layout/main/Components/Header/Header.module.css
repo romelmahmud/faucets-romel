@@ -41,7 +41,8 @@ display: flex;
  align-items: center;
 }
 
-.network_list_select{
+.network_lists_select{
+  margin-right: 12px;
 
 }
 
