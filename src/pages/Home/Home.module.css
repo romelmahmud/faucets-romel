@@ -1,0 +1,5 @@
+@import '../../index.css';
+.home_wrapper {
+  background: var(--gray-white-bg-color);
+  padding-bottom: 20px;
+}
